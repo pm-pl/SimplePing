@@ -23,6 +23,7 @@ class Main extends PluginBase implements Listener {
 
     /**
      * @param PlayerChatEvent $event
+     * @priority NORMAL
      */
     public function onPlayerChat(PlayerChatEvent $event): void {
         $message = $event->getMessage();
@@ -39,7 +40,7 @@ class Main extends PluginBase implements Listener {
     }
 
     /**
-     * Check if a player can be pinged.
+     * Check if player can be pinged.
      *
      * @param Player $player
      * @return bool
